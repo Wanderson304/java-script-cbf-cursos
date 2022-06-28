@@ -2,23 +2,31 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFB Cursos - Javascript</title>
+
     <script>     
 
     </script>
+
 </head>
 <body>
-        <p id="texto"> CBF Cursos</p>
-        <input type="text" id="cxtexto" value="CFB Cursos">
-        <div id="dv">Texto da DIV</div>
 
-        <script>
+    <h2>CFB Cursos</h2>
+    <p>Curso de JavaScript</p>
+    <h2>Aula 25</h2>
+    <p>www.youtube.com/cfbcursos</p>
+    <h2>cfbcursos.com.br</h2>
 
-            var cxt = document.getElementById("texto").innerHTML="Aula 24 - innerHTML";
-            alert(document.getElementById("dv").innerHTML);
+    <hr/>
 
-        </script>
+    <script>     
+
+        var tagsP=document.getElementsByTagName("*");
+
+        tagsP[8].innerHTML="Novo texto"
+        tagsP[8].style.color="#f00";
+
+    </script>
+  
 </body>
 </html>
