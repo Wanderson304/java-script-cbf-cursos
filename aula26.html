@@ -20,7 +20,27 @@
     }
     </style>
 </head>
-<body>
+<body >
+    <h1 class="titulo">querySelectoAll</h1>
+    <p>O querySelectoAll() é um metodo que retorna os elementos de documentos de uma classe</p>
+    <h2 class="titulo">Curso de JavaScript</h2>
+    <p>www.youtube.com</p>
+    <p class="titulo">cfbcursos.com.br</p>
+    <div>
+        <p>Este texto está dentro de uma DIv</p>
+        <p>Este também</p>
+    </div>
+    <a href="wwww.youtube.com">Canal</a>
+    <a href="wwww.youtube.com">Site</a>
+
+    <script>
+
+        var elementos=document.querySelectorAll(".titulo");
+        for(var i=0;i<elementos.length; i++){
+            document.write(elementos[i].innerHTML+"<br>");
+        }
+
+    </script>
   
 </body>
 </html>
