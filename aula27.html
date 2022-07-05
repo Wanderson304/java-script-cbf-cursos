@@ -30,23 +30,22 @@
         <input type="password" name="fSenha" value="123">
         <input type="submit" name="btEnviar" value="Enviar">
     </form>
-    <form nome="curso2" id="curso2" action="#" method="post">
-        <label>Nome</label>
-        <input type="text" nome="fNome" id="teste" value="Segundo - 2">
-        <label>Senha</label>
-        <input type="password" name="fSenha" value="123">
-        <input type="submit" name="btEnviar" value="Enviar">
-    </form>
+
 
     <hr>
 
     <script>
-        var fm = document.forms["curso1"].elements[0].value;
-        //var fm = document.forms.item(0).id;
-        // var fm = document.forms.namedItem("curso1").id;
-        //var fm = document.forms.namedItem("curso1").innerHTML;
+        document.write(document.getElementById("curso1").elements[0].value);
 
-        document.write(fm);
+        var fm = document.forms[0];
+        var el = fm.elements;
+
+        for (var i = 0; i < el.length - 1; i++) {
+            el[i].style.backgroundColor = "#ddd";
+            el[i].value = "CFBCursos";
+        }
+
+        //document.write(fm);
     </script>
 
 </body>
