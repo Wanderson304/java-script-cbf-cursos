@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+</html>
+
 <head>
     <title>CFB Cursos - Javascript</title>
     <meta charset="UTF-8">
 
     <script>
-        // Função com Array
-        var numeros = new Array(1, 2, 3);
+        var nomeCor = "Vermelho"
+        var i = 0;
 
-        function media(nums) {
-            var tam = nums.length;
-            var soma = 0;
-            for (var i = 0; i < tam; i++) {
-                soma += nums[i];
-            }
-            return Math.round(soma / tam);
+        function cor() {
+            var nomeCor = "Azul";
+            document.write(this.nomeCor + "<br>" + nomeCor + "<br>");
+
         }
 
-        document.write(media(numeros));
+        cor();
+        for (var i = 0; i < 10; i++) {}
+
+        document.write(i + "<br>");
     </script>
 
 </head>
